@@ -1,20 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
+    <link rel="stylesheet" href="styles.css">
     <script src="anime.min.js"></script>
-    <div class="circle"></div>
+</head>
+
+<body>
+    <!-- Create a div with class container as a parent element for our ball divs -->
+    <!-- <div class="container">h1</div> -->
+
+    <!-- Connect Anime.js cdn to our project -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"
+        integrity="sha512-z4OUqw38qNLpn1libAN9BsoDx6nbNFio5lA6CuTp9NlK83b89hgyCVq+N5FdBJptINztxn1Z3SaKSKUS5UP60Q=="
+        crossorigin="anonymous"></script> -->
+<br>
+<br>
+    <table>
+        <tr>
+            <th>
+                <div class="circle"></div>
+            </th>
+            <br>
+            <th>
+                <div class="circle"></div>
+            </th>
+            <th>
+                <div class="circle"></div>
+            </th>
+            <br>
+            <th>
+                <div class="circle"></div>
+            </th>
+        </tr>
+    </table>
+    <br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+            <th>
+                <div class="circle1"></div>
+            </th>
+            <br>
+            <th>
+                <div class="circle1"></div>
+            </th>
+            <th>
+                <div class="circle1"></div>
+            </th>
+            <br>
+            <th>
+                <div class="circle1"></div>
+            </th>
     <script>
         anime({
-        targets: '.circle',
-        translateX: 250, // -> '250px'
-        rotate: 540 // -> '540deg'
-      });
+            targets: '.circle',
+            translateY:[50,-50],
+            delay: 1000,
+            loop:true,
+            easing: 'easeOutInQuart'
+        });
+
+        anime({
+            targets: '.circle1',
+            translateX:[0,100],
+            delay: 1000,
+            loop:true,
+            easing: 'easeOutInQuart'
+        });
     </script>
 </body>
+
 </html>

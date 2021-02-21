@@ -1,0 +1,21 @@
+.circle{
+    background-color: cyan;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+}
+
+.circle1{
+    background-color: cyan;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    align-self: flex-start;
+}
+
+.name{
+    text-align: center;
+    vertical-align:middle ;
+    color: black;
+    font-family: 'Times New Roman', Times, serif
+}
